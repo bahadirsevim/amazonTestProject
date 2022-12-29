@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: Test_Add_Product_To_Cart
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 54.759 s <<< FAILURE! - in Test_Add_Product_To_Cart
+go_to_cart  Time elapsed: 4.995 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: nav-cart-count-container (tried for 5 second(s) with 500 milliseconds interval)
+	at Test_Add_Product_To_Cart.go_to_cart(Test_Add_Product_To_Cart.java:52)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#nav\-cart\-count\-container"}
+  (Session info: chrome=104.0.5112.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NRD5CG5396W33', ip: '192.168.1.55', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\basevim\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 120c71aa497bfd356f0875babf3fc00f
+*** Element info: {Using=id, value=nav-cart-count-container}
+	at Test_Add_Product_To_Cart.go_to_cart(Test_Add_Product_To_Cart.java:52)
+
+is_current_product  Time elapsed: 0.024 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at Test_Add_Product_To_Cart.is_current_product(Test_Add_Product_To_Cart.java:59)
+

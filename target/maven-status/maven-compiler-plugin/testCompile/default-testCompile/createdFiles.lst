@@ -1,0 +1,5 @@
+Test_Add_Product_To_Favorites.class
+TestResultLogger.class
+Test_Delete_Product_In_Favorites.class
+BaseTest.class
+Test_Add_Product_To_Cart.class
